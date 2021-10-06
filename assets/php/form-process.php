@@ -33,7 +33,7 @@ if (empty($_POST["message"])) {
 
 
 $EmailTo = "boyington@gmail.com";
-$Subject = "Liana Weisz Condolences Form";
+$Subject = "My Portfolio Website";
 
 // prepare email body text
 $Body = "";
