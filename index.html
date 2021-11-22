@@ -14,14 +14,14 @@
       content="Rohan, Anthony, Boyington, Resume, Portfolio"
     />
     <!-- ========== STYLESHEETS ========== -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.min.css" />
-    <link rel="stylesheet" href="css/animation.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
-    <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- ========== JQUERY PLUGIN ========== -->
@@ -73,22 +73,12 @@
         </div>
       </header>
 
-      <!-- ================================ HERO =============================== -->
-      <!-- <section id="home" class="hero">
-        <div class="content">
-          <h1>Portfolio</h1>
-          <img src="img/hero/life_of.svg" alt="The incredible life of" />
-          <h2>Anthony Boyington</h2>
-        </div>
-      </section> -->
-
-      <!-- ================================ SCROLL =============================== -->
+      <!-- ================================ SCROLL TO TOP =============================== -->
       <div class="scrolltop">
         <div class="scroll icon">
           <a href="#home"><i class="fa fa-4x fa-angle-up topicon"></i></a>
         </div>
       </div>
-      <!-- end scrolltop  -->
 
       <!-- ================================ ABOUT =============================== -->
       <section id="about">
@@ -107,10 +97,21 @@
                   </div>
                   <!-- end about-image  -->
                   <div class="about-download">
-                    <button class="about-btn">
-                      <a href="/doc/resume.pdf" target="_blank">
+                    <!-- <button type="button" class="about-btn">
+                      <a
+                        href="/doc/resume.pdf"
+                        class="about-btn"
+                        target="_blank"
+                      >
                         Download Resume <i class="fa fa-angle-right topicon"></i
                       ></a>
+                    </button> -->
+
+                    <button
+                      class="about-btn"
+                      onClick="window.location.href='/doc/resume.pdf';"
+                    >
+                      Download Resume <i class="fa fa-angle-right topicon"></i>
                     </button>
                   </div>
                 </div>
@@ -131,24 +132,6 @@
           </div>
         </div>
       </section>
-      <!-- end about  -->
-
-      <!-- ================================ MESSAGE =============================== -->
-      <!-- <section class="message1 text-center">
-        <div id="message-content1">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 col-md-12">
-                <div class="message1-client wow fadeIn">
-                  <h3>
-                    Hi there, nice to meet you. Let's talk a bit about me.
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <!-- ================================ BIO =============================== -->
       <section id="video">
@@ -320,17 +303,13 @@
                         </div>
                       </div>
                     </div>
-                    <!-- end tabcontent -->
                   </div>
-                  <!-- end tabs -->
                 </div>
               </div>
             </div>
-            <!-- end container  -->
           </div>
         </div>
       </section>
-      <!-- end video  -->
 
       <!-- ================================ PORTFOLIO =============================== -->
       <section id="work">
@@ -353,28 +332,6 @@
           </div>
           <div class="work-details">
             <div class="container">
-              <!-- <ul id="filters" class="clearfix">
-                <li>
-                  <span
-                    class="filter"
-                    data-filter=".filter1, .filter2, .filter3, .filter4"
-                    >All</span
-                  >
-                </li>
-                <li>
-                  <span class="filter active" data-filter=".filter1"
-                    >Liana</span
-                  >
-                </li>
-                <li>
-                  <span class="filter" data-filter=".filter2">Family</span>
-                </li>
-                <li>
-                  <span class="filter" data-filter=".filter3">Friends</span>
-                </li>
-                <li><span class="filter" data-filter=".filter4">More</span></li>
-              </ul> -->
-
               <div id="portfoliolist">
                 <div class="portfolio filter1 content-lm" data-cat="filter1">
                   <div class="portfolio-wrapper" data-wow-delay=".2s">
@@ -779,11 +736,6 @@
                 <!-- End Portfolio List -->
               </div>
             </div>
-            <!-- container -->
-            <!-- <a href="#" id="loadMore"> Load More </a> -->
-            <!-- <a href="#" id="loadMore" class="btn btn-primary" role="button"
-              >Load More</a
-            > -->
             <a href="#" id="loadMore" role="button">Load More</a>
           </div>
         </div>
@@ -894,58 +846,37 @@
                         <div class="clearfix"></div>
                       </form>
                     </div>
-                    <!-- end contact-form -->
                   </div>
-                  <!-- end col-md-8 -->
                 </div>
-                <!-- end row -->
               </div>
             </div>
-            <!-- end contact-form-details -->
           </div>
-          <!-- end contact-grid -->
         </div>
-        <!-- end contact-content -->
       </section>
-      <!-- end contact -->
 
       <!-- ================================ FOOTER =============================== -->
       <footer class="copyright-details">
         <div class="copyright">
           <h3>&copy; 2021 Designed by Rohan Anthony</h3>
         </div>
-        <!-- end copyright -->
       </footer>
-      <!-- end footer -->
     </main>
-    <!-- end main-page -->
 
     <!-- ================================ JQUERY =============================== -->
 
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/wow-anim.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/jquery.scrolly.js"></script>
     <script src="js/jquery.fancybox.js?v=2.1.5"></script>
     <script src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>
     <script src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     <script src="js/jquery.fancybox-media.js?v=1.0.6"></script>
     <script src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
     <script src="js/fancybox.js"></script>
-    <script src="js/mixitup.js"></script>
-    <!-- <script src="js/jquery-2.1.4.js"></script> -->
-    <script src="js/jquery.mixitup.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/map.js"></script>
-    <!-- Load More / jquery lib-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- <script src="js/timer.js"></script> -->
 
-    <!-- Load More -->
+    <!-- Load More Script -->
     <script>
       $(document).ready(function () {
         $('.content-lm').slice(0, 4).show();
@@ -958,8 +889,5 @@
         });
       });
     </script>
-
-    <!-- end scripts -->
   </body>
 </html>
-<!-- end html -->
