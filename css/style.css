@@ -24,7 +24,7 @@
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
-  --white: #fff;
+  --white: #ffffff;
   --gray: #868e96;
   --gray-dark: #343a40;
   --primary: #83BD41;
@@ -47,6 +47,8 @@
   --secondary-txt-color: #0a84b5;
   --primary-overlay-color: rgba(0, 0, 0, 0.2);
   --secondary-overlay-color: rgba(0, 0, 0, 0.9);
+  --primary-background-color: #ffffff;
+  --secondary-background-color:#f6f6f6;
   --menu-speed: 0.75s;
   --font-family: "Nunito", sans-serif;
   --font-family-sans-serif: "Nunito Sans", "Roboto", "Segoe UI", "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial, sans-serif;
@@ -66,7 +68,7 @@ html {
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--font-family);
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.15;
@@ -385,7 +387,7 @@ section {
 }
 
 .main-title p {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: var(--font-family);
   color: var(--primary-txt-color);
   font-size: 1.8rem;
   letter-spacing: 0px;
@@ -404,7 +406,6 @@ section {
   .site-title h3 {
     font-family: 'oswald', sans-serif;
     font-size: 4rem;
-    color: #00172b;
     font-weight: 200;
     transition: 0.2s;
     -webkit-transition: 0.2s;
@@ -413,6 +414,11 @@ section {
     -o-transition: 0.2s;
     margin: 0px 11px;
   }
+
+  .site-title a{
+    text-decoration: none;
+    color: var(--primary-txt-color);
+    }
 
   .white-title p {
     color: white;
@@ -469,10 +475,6 @@ section {
     color: white;
   }
   
-  .scroll:hover .fa {
-    padding-top: -10px;
-  }
-  
   .scroll .fa {
     font-size: 30px;
     margin-top: 0px;
@@ -494,7 +496,7 @@ section {
 /*===== ABOUT =====*/
   #about {
     width: 100%;
-    background-color: fff;
+    background-color: var(--primary-background-color);
     margin-top: 0px;
     position: relative;
   }
@@ -510,7 +512,7 @@ section {
     margin-left: 10%;
   }
   
-  .about-img {
+  .about-portrait {
     width: 25rem;
     height: auto;
   }
@@ -520,27 +522,37 @@ section {
     margin-left: 30%;
     margin-top: 1rem;
   }
-  
-  .about-btn {
-    background-color: transparent;
-    border: none;
-  }
-  
-  .about-btn a {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 2rem;
+
+  .about-download a,
+  .bio-download a {
+    font-family: var(--font-family);
+    font-size: 1.8rem;
     color: var(--primary-txt-color);
+    text-decoration: none;
+    border-radius: 5em;
     padding: 10px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
   }
   
-  .about-btn a:hover {  
+  .about-download a:hover,
+  .bio-download a:hover {
     background-color: #9dd9e8;
     text-decoration: none;
     border-radius: 5em;
     padding: 10px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
   }
   
-  .about-btn .fa {
+  .about-btn .fa,
+  .bio-download .fa {
     font-size: 2.5rem;
     margin-top: 0px;
     margin-left: 1px;
@@ -577,11 +589,11 @@ section {
     margin-bottom: 0px;
   }
 
-/*===== VIDEO =====*/
+/*===== BIO =====*/
 
-  #video {
+  #bio {
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: var(--secondary-background-color);
     margin-top: 0px;
     position: relative;
   }
@@ -605,19 +617,17 @@ section {
     height: 100%;
   }
   
-  .video-content {
+  .bio-content {
     padding-top: 100px;
     padding-bottom: 0px;
   }
   
-  .video-grid {
+  .bio-grid {
     width: 100%;
     margin-top: 0px;
     position: relative;
     z-index: 111;
   }
-
-/*===== BIO =====*/
 
 .tab {
   text-align: center;
@@ -697,7 +707,7 @@ section {
 
 .tab .tab-content h3 {
   margin-top: -1px;  
-  font-family: 'nunito', sans-serif;
+  font-family: var(--font-family);
   color: var(--primary-txt-color);
   font-weight: 300;
   text-align: left;
@@ -718,7 +728,7 @@ section {
 }
 
 .tab .tab-content p {
-  font-family: 'nunito sans', sans-serif;
+  font-family: var(--font-family-sans-serif);
   color: var(--primary-txt-color);
   text-align: left;
 }
@@ -742,7 +752,7 @@ section {
 }
 
 .tab .things-i-do li {
-  font-family: 'nunito sans', sans-serif;
+  font-family: var(--font-family-sans-serif);
   border: none;
   color: var(--primary-txt-color);
   margin-right: 0;
@@ -751,54 +761,18 @@ section {
   word-spacing: 1px;
 }
 
-.tab .download{
+.bio-download {
   position: relative;
   margin: 0;
   margin-top: 2rem;
   text-align: left;
 }
 
-.tab .download-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.tab .download-btn a {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 2rem;
-  color: var(--primary-txt-color);
-  padding: 10px;
-}
-
-.tab .download-btn a:hover {
-  background-color: #9dd9e8;
-  text-decoration: none;
-  border-radius: 5em;
-  padding: 10px;
-}
-
-.tab .download-btn .fa {
-  font-size: 2.5rem;
-  margin-top: 0px;
-  margin-left: 1px;
-  transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  color: white;
-  line-height: 22px;
-  height: 40px;
-  width: 40px;
-  line-height: 37px;
-  border-radius: 150px;
-  background-color: var(--secondary-txt-color);
-}
-
 /*===== PORTFOLIO / WORK =====*/
 
 #work {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--primary-background-color);
 }
 
 .work-content {
@@ -857,7 +831,7 @@ section {
   height: 0%;
   top: 50%;
   width: 2px;
-  background-color: white;
+  background-color: var(--primary-background-color);
   left: 15px;
   z-index: 111;
   transition: 0.4s;
@@ -873,7 +847,7 @@ section {
   height: 0%;
   top: 50%;
   width: 2px;
-  background-color: white;
+  background-color: var(--primary-background-color);
   right: 15px;
   z-index: 111;
   transition: 0.4s;
@@ -950,7 +924,7 @@ section {
 
 .portfolio-wrapper h3 {
   z-index: 111;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-family);
   font-weight: 600;
   font-size: 22px;
   color: white;
@@ -1016,7 +990,7 @@ section {
   height: 2px;
   top: 15px;
   width: 0%;
-  background-color: white;
+  background-color: var(--primary-background-color);
   left: 50%;
   z-index: 111;
   transition: 0.4s;
@@ -1436,7 +1410,7 @@ section {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   background: rgb(50, 50, 50);
   background: -moz-linear-gradient(
-    top,
+    to top,
     rgb(68, 68, 68) 0%,
     rgb(52, 52, 52) 50%,
     rgb(41, 41, 41) 50%,
@@ -1452,28 +1426,28 @@ section {
     color-stop(100%, rgb(51, 51, 51))
   );
   background: -webkit-linear-gradient(
-    top,
+    to top,
     rgb(68, 68, 68) 0%,
     rgb(52, 52, 52) 50%,
     rgb(41, 41, 41) 50%,
     rgb(51, 51, 51) 100%
   );
   background: -o-linear-gradient(
-    top,
+    to top,
     rgb(68, 68, 68) 0%,
     rgb(52, 52, 52) 50%,
     rgb(41, 41, 41) 50%,
     rgb(51, 51, 51) 100%
   );
   background: -ms-linear-gradient(
-    top,
+    to top,
     rgb(68, 68, 68) 0%,
     rgb(52, 52, 52) 50%,
     rgb(41, 41, 41) 50%,
     rgb(51, 51, 51) 100%
   );
   background: linear-gradient(
-    top,
+    to top,
     rgb(68, 68, 68) 0%,
     rgb(52, 52, 52) 50%,
     rgb(41, 41, 41) 50%,
@@ -1603,7 +1577,7 @@ section {
 
 #contact {
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: var(--secondary-background-color);
   margin-top: 0px;
   position: relative;
 }
@@ -1632,7 +1606,7 @@ section {
 
 .contact-title h3 {
   font-size: 39px;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-family);
   letter-spacing: 0px;
   color: white;
   font-weight: 600;
@@ -1675,7 +1649,7 @@ section {
 
 .contact-col h3 {
   font-size: 33px;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-family);
   letter-spacing: 3px;
   color: #333;
   font-weight: 700;
@@ -1718,7 +1692,7 @@ section {
   padding: 6px 12px;
   font-size: 1em;
   line-height: 1.42857143;
-  color: var(primary-txt-color);
+  color: var(--primary-txt-color);
   background-image: none;
   border: 1px solid black;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1765,7 +1739,7 @@ section {
 
 .contact-info h3 {
   font-size: 25px;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
   color: white;
   margin-top: -3px;
@@ -1827,7 +1801,7 @@ section {
   color: white;
   position: relative;
   margin-top: 4px;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
 }
 
@@ -2052,7 +2026,7 @@ section {
     padding: 0px;
     display: table;
     height: 100%;
-    background-color: #f6f6f6;
+    background-color: var(--secondary-background-color);
   }
 
   .navbar-default .navbar-toggle {
@@ -2142,7 +2116,6 @@ section {
   }
 
   .about-details h3,
-  .video-title h3,
   .main-title h3 {
     font-size: 3rem;
   }
@@ -2200,7 +2173,7 @@ section {
 
   .contact-info h3 {
     font-size: 25px;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
     color: white;
     margin-top: 50px;
@@ -2208,7 +2181,7 @@ section {
 
   .contact-info h3 {
     font-size: 25px;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-family);
     font-weight: 500;
     color: white;
     margin-top: 50px;
@@ -2315,7 +2288,7 @@ section {
 
   .us-row {
     height: 450px;
-    background-color: #f6f6f6;
+    background-color: var(--secondary-background-color);
   }
 
   #filters li {
@@ -2452,7 +2425,7 @@ section {
     letter-spacing: 2px;
     padding-bottom: 9px;
     margin-top: 10px;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-family);
   }
 
   .home-contact1 {
