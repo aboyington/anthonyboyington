@@ -569,6 +569,11 @@ section {
     background-color: var(--secondary-txt-color);
   }
 
+  .about-details {
+    margin-left: 0px;
+    padding-top: 50px;
+  }
+
   .about-details p {
     font-size: 15px;
     color: #666;
@@ -1870,6 +1875,7 @@ section {
     -o-transition: 0.2s;
     padding: 10px 0px;
   }
+
 }
 
 @media screen and (max-width: 865px) {
@@ -1983,6 +1989,7 @@ section {
 
   .about-details {
     margin-left: 0px;
+    padding-top: 0px;
   }
 
   .navbar-default .navbar-nav > li > a:hover {
@@ -2407,11 +2414,6 @@ section {
 
   .navbar-default .navbar-nav > li > a:hover {
     color: var(--primary-txt-color);
-  }
-
-  .about-details {
-    margin-top: 50px;
-    margin-left: 12px;
   }
 
   .about-details {
