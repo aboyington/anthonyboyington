@@ -398,9 +398,10 @@ section {
 }
 
 .site-title {
-    padding: 0px 0px;
-    margin: 17px 21px;
-    width: 250px;
+    padding: 0px;
+    /* margin: 17px 21px; */
+    margin: 17px 0;
+    width: 300px;
   }
   
   .site-title h3 {
