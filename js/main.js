@@ -72,22 +72,29 @@
 })(jQuery);
 
 /*============================= Testimonial ==============================*/
-
-
-
-    $(window).on('load', function () {
-        "use strict";
-        $("#testimonial-slider").owlCarousel({
+    $("#work").owlCarousel({
         items:1,
         itemsDesktop:[1000,1],
         itemsDesktopSmall:[979,1],
         itemsTablet:[768,1],
         pagination:true,
-        navigation:false,
+        navigation:true,
         slideSpeed:1000,
         autoPlay:true
     });
 
+    $(window).on('load', function () {
+        "use strict";
+        $("#work").owlCarousel({
+            items:1,
+            itemsDesktop:[1000,1],
+            itemsDesktopSmall:[979,1],
+            itemsTablet:[768,1],
+            pagination:true,
+            navigation:true,
+            slideSpeed:1000,
+            autoPlay:true
+        });
     });
     
     /*===========================================counter-up===========================================*/

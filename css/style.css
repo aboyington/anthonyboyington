@@ -40,7 +40,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --container-max: 980px;
+  --container-max: 100%;
   --primary-color: rgba(13, 110, 139, 0.75);
   --secondary-color: #0a84b5;
   --primary-txt-color: #00172b;
@@ -216,6 +216,17 @@ blockquote {
 }
 
 /*===== MENU =====*/
+/* .menubar {
+  background-color: var(--primary-background-color);
+  padding: 0px;
+  margin: 0px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+} */
 
 .navbar-default.small {
     background-color: white;
@@ -224,13 +235,13 @@ blockquote {
 
 .navbar-nav {
     float: right;
-    margin: 17px 21px;
-    margin-right: 0px;
+    margin: 17px 0px;
  }
 
 .navbar-nav li {
     float: left;
-    margin: 0px 11px;
+    margin: 0px;
+    margin-left: 2rem;
     display: inherit;
 }
 
@@ -249,7 +260,7 @@ blockquote {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    border-bottom: var(--primary-txt-color) 2px solid;
+    border-bottom: var(--secondary-txt-color) 2px solid;
   }
 
 .navbar-default .navbar-nav > .active > a,
@@ -308,7 +319,7 @@ blockquote {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .flex-columns h2 {
@@ -478,7 +489,8 @@ section {
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
-    margin: 0px 11px;
+    /* margin: 0px 11px; */
+    margin: 0px;
   }
 
   .site-title a{
@@ -563,25 +575,24 @@ section {
   #about {
     width: 100%;
     background-color: var(--primary-background-color);
-    margin-top: 0px;
+    margin-top: 50px;
     position: relative;
   }
   
   .about-content {
-    padding: 100px 0 50px 0;
+    padding: 50px 0px;
     position: relative;
     z-index: 11;
   }
 
-  /* .about-image {
-    position: relative;
-    margin-left: 10%;
+  .about-text p {
+    font-size: 4rem;
+    font-family: 'oswald', sans-serif;
+    color: var(--primary-txt-color);
+    line-height: 5rem;
+    font-weight: 200;
+    padding: 30px;
   }
-  
-  .about-portrait {
-    width: 25rem;
-    height: auto;
-  } */
   
   .download-btn-sm {
     font-family: var(--font-family);
@@ -684,15 +695,7 @@ section {
     word-spacing: 1px;
   } */
 
-  .about-details h3 {
-    font-size: 4rem;
-    font-family: 'oswald', sans-serif;
-    color: var(--primary-txt-color);
-    line-height: 5rem;
-    font-weight: 200;
-    padding: 0px;
-    margin-bottom: 0px;
-  }
+  
 
 /*===== BIO =====*/
 
@@ -703,28 +706,8 @@ section {
     position: relative;
   }
   
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    margin-bottom: 50px;
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .video-container iframe,
-  .video-container object,
-  .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
   .bio-content {
-    padding-top: 100px;
-    padding-bottom: 0px;
+    padding: 100px 0px;
   }
   
   .bio-grid {
@@ -802,16 +785,15 @@ section {
 }
 
 .tab .tab-content {
-  margin-top: -8px;
-  padding: 30px; 
-  border-top: 1px solid #d7d6d6;
-  border-radius: 0 0 5px 5px;
-  line-height: 30px;
+  /* margin-top: -8px;*/
+  padding-top: 30px;
+  /* border-radius: 0 0 5px 5px;*/
+  line-height: 30px; 
  
 }
 
 .tab .tab-content h3 {
-  margin-top: -1px;  
+  /* margin-top: -1px;   */
   font-family: var(--font-family);
   color: var(--primary-txt-color);
   font-weight: 300;
@@ -836,10 +818,11 @@ section {
   font-family: var(--font-family-sans-serif);
   color: var(--primary-txt-color);
   text-align: left;
+  padding-right: 30px;
 }
 
 .tab .things-i-do {
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 .tab .things-i-do ul {
@@ -852,7 +835,7 @@ section {
   font-weight: 400;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  /* margin-left: -1em; */
   margin-right: 10px;
 }
 
@@ -871,6 +854,25 @@ section {
   margin: 0;
   margin-top: 2rem;
   text-align: left;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*===== PORTFOLIO / WORK =====*/
@@ -1168,7 +1170,7 @@ section {
 }
 
 /*===== SELF CLEANING =====*/
-
+/* 
 .container:after {
   content: '\0020';
   display: block;
@@ -1206,7 +1208,7 @@ section {
   visibility: hidden;
   width: 0;
   height: 0;
-}
+} */
 
 /*===== FANCY BOX =====*/
 
@@ -1960,7 +1962,8 @@ section {
 @media screen and (max-width: 992px) {
   .navbar-nav li {
     float: left;
-    margin: 0px 7px;
+    margin: 0px;
+    margin-left: 2rem;
     display: inherit;
   }
 
@@ -1981,14 +1984,15 @@ section {
 @media screen and (max-width: 865px) {
   .navbar-nav li {
     float: left;
-    margin: 0px 5px;
+    margin: 0px;
+    margin-left: 2rem;
     display: inherit;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 100%;
+    width: var(--container-max);
   }
 
   .navbar-default .navbar-nav > li > a {
@@ -2017,7 +2021,8 @@ section {
 
   .navbar-nav li {
     float: left;
-    margin: 0px 6px;
+    margin: 0px;
+    margin-left: 2rem;
     display: inherit;
   }
 
@@ -2100,8 +2105,9 @@ section {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
-    width: 50%;
+    width: 100%;
     margin: 0%;
+    margin-bottom: 5%;
     display: none;
     float: left;
     overflow: hidden;
@@ -2169,7 +2175,8 @@ section {
 
   .navbar-nav li {
     float: left;
-    margin: 12px 0px;
+    margin: 0px;
+    margin-left: 2rem;
     display: inherit;
     width: 100%;
   }
@@ -2296,10 +2303,23 @@ section {
 
   .navbar-nav li:last-child {
     float: left;
-    margin: 0px 11px;
+    margin: 0px;
+    margin-left: 2rem;
     display: inherit;
     margin-right: 0px;
     margin-left: 0px;
+  }
+
+  #portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 5%;
+    display: none;
+    float: left;
+    overflow: hidden;
   }
 
 }
@@ -2330,8 +2350,9 @@ section {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
-    width: 50%;
+    width: 100%;
     margin: 0%;
+    margin-bottom: 5%;
     display: none;
     float: left;
     overflow: hidden;
@@ -2634,7 +2655,8 @@ section {
 
   .navbar-nav li {
     float: left;
-    margin: 5px 0px;
+    margin: 0px;
+    margin-left: 2rem;
     display: inherit;
     width: 100%;
   }
