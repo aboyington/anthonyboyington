@@ -73,7 +73,7 @@ body {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.15;
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
     background-color: transparent;
     margin: 0;
 }  
@@ -165,30 +165,30 @@ blockquote {
 }
 
 .btn-success.disabled {
-  background-color: var(--primary-txt-color);
-  border-color: var(--primary-txt-color);
+  background-color: #00172b; color: var(--primary-txt-color);
+  border-color: #00172b; color: var(--primary-txt-color);
   color: white;
   cursor: not-allowed;
   opacity: 1.5;
 }
 
 .btn.disabled:hover {
-  background-color: var(--primary-txt-color);
-  border-color: var(--primary-txt-color);
+  background-color: #00172b; color: var(--primary-txt-color);
+  border-color: #00172b; color: var(--primary-txt-color);
   color: white;
   cursor: not-allowed;
 }
 
 .btn-success:hover {
   cursor: pointer;
-  background-color: var(--primary-txt-color);
-  border-color: var(--primary-txt-color);
+  background-color: #00172b; color: var(--primary-txt-color);
+  border-color: #00172b; color: var(--primary-txt-color);
   color: white;
 }
 
 .btn-success {
-  background-color: var(--primary-txt-color);
-  border-color: var(--primary-txt-color);
+  background-color: #00172b; color: var(--primary-txt-color);
+  border-color: #00172b; color: var(--primary-txt-color);
   color: white;
 }
 
@@ -217,7 +217,7 @@ blockquote {
 
 /*===== MENU =====*/
 /* .menubar {
-  background-color: var(--primary-background-color);
+  background-color: #ffffff; background-color: var(--primary-background-color);
   padding: 0px;
   margin: 0px;
   height: 50px;
@@ -454,7 +454,7 @@ section {
 
 .main-title h3 {
   font-family: 'oswald', sans-serif;
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   font-size: 4rem;
   font-weight: 200;
   margin-top: -8px;
@@ -464,7 +464,7 @@ section {
 
 .main-title p {
   font-family: var(--font-family);
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   font-size: 1.8rem;
   letter-spacing: 0px;
   padding: 0px;
@@ -495,7 +495,7 @@ section {
 
   .site-title a{
     text-decoration: none;
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
     }
 
   .white-title p {
@@ -574,7 +574,7 @@ section {
 /*===== ABOUT =====*/
   #about {
     width: 100%;
-    background-color: var(--primary-background-color);
+    background-color: #ffffff; background-color: var(--primary-background-color);
     margin-top: 50px;
     position: relative;
   }
@@ -588,7 +588,7 @@ section {
   .about-text p {
     font-size: 4rem;
     font-family: 'oswald', sans-serif;
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
     line-height: 5rem;
     font-weight: 200;
     padding: 30px;
@@ -597,7 +597,7 @@ section {
   .download-btn-sm {
     font-family: var(--font-family);
     font-size: 1.8rem;
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
     text-decoration: none;
     border-radius: 5em;
     padding: 10px;
@@ -609,7 +609,7 @@ section {
   }
 
   .download-btn-sm:hover {
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
     background: var(--primary-hover-color);
     text-decoration: none;
   }
@@ -621,10 +621,10 @@ section {
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
     /* padding: .25em; */
     /* border-radius: 50%; */
-    /* background-color: var(--secondary-txt-color); */
+    /* background-color: #0a84b5; color: var(--secondary-txt-color); */
   }
 
 /*   
@@ -638,7 +638,7 @@ section {
   .bio-download a {
     font-family: var(--font-family);
     font-size: 1.8rem;
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
     text-decoration: none;
     border-radius: 5em;
     padding: 10px;
@@ -677,7 +677,7 @@ section {
     width: 40px;
     line-height: 37px;
     border-radius: 150px;
-    background-color: var(--secondary-txt-color);
+    background-color: #0a84b5; color: var(--secondary-txt-color);
   } */
 
   /* .about-details {
@@ -701,7 +701,7 @@ section {
 
 #skills {
   width: 100%;
-  background-color: var(--primary-background-color);
+  background-color: #ffffff; background-color: var(--primary-background-color);
   margin-top: 0px;
   position: relative;
 }
@@ -717,7 +717,7 @@ section {
 .skill-item {
   text-align: center;
   padding: 40px 20px;
-  background-color: var(--secondary-background-color);
+  background-color: #f6f6f6; background-color: var(--secondary-background-color);
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -736,17 +736,17 @@ section {
 
 .skill-icon i {
   font-size: 4rem;
-  color: var(--secondary-txt-color);
+  color: #0a84b5; color: var(--secondary-txt-color);
   transition: color 0.3s ease;
 }
 
 .skill-item:hover .skill-icon i {
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
 }
 
 .skill-item h4 {
   font-family: 'oswald', sans-serif;
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   font-size: 2.4rem;
   font-weight: 400;
   margin-bottom: 20px;
@@ -760,7 +760,7 @@ section {
 
 .skill-item li {
   font-family: var(--font-family-sans-serif);
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   font-size: 1.6rem;
   margin-bottom: 8px;
   padding: 5px 0;
@@ -769,7 +769,7 @@ section {
 
 .skill-item li:before {
   content: "→";
-  color: var(--secondary-txt-color);
+  color: #0a84b5; color: var(--secondary-txt-color);
   font-weight: bold;
   margin-right: 10px;
 }
@@ -778,7 +778,7 @@ section {
 
 #experience {
   width: 100%;
-  background-color: var(--secondary-background-color);
+  background-color: #f6f6f6; background-color: var(--secondary-background-color);
   margin-top: 0px;
   position: relative;
 }
@@ -804,7 +804,7 @@ section {
   bottom: 0;
   left: 50px;
   width: 2px;
-  background: var(--secondary-txt-color);
+  background: #0a84b5; background: var(--secondary-txt-color);
   margin-left: -1px;
 }
 
@@ -820,14 +820,14 @@ section {
   top: 0;
   width: 20px;
   height: 20px;
-  background: var(--secondary-txt-color);
+  background: #0a84b5; background: var(--secondary-txt-color);
   border-radius: 50%;
-  border: 4px solid var(--primary-background-color);
+  border: 4px solid #ffffff; border: 4px solid var(--primary-background-color);
   z-index: 2;
 }
 
 .timeline-content {
-  background: var(--primary-background-color);
+  background: #ffffff; background: var(--primary-background-color);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -848,12 +848,12 @@ section {
   width: 0;
   height: 0;
   border: 15px solid transparent;
-  border-right-color: var(--primary-background-color);
+  border-right-color: #ffffff; border-right-color: var(--primary-background-color);
 }
 
 .timeline-content h4 {
   font-family: 'oswald', sans-serif;
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   font-size: 2.4rem;
   font-weight: 400;
   margin-bottom: 10px;
@@ -861,7 +861,7 @@ section {
 
 .timeline-content h5 {
   font-family: var(--font-family);
-  color: var(--secondary-txt-color);
+  color: #0a84b5; color: var(--secondary-txt-color);
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -878,7 +878,7 @@ section {
 
 .timeline-content p {
   font-family: var(--font-family-sans-serif);
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   font-size: 1.6rem;
   line-height: 1.6;
   margin: 0;
@@ -940,7 +940,7 @@ section {
 
   #bio {
     width: 100%;
-    background-color: var(--secondary-background-color);
+    background-color: #f6f6f6; background-color: var(--secondary-background-color);
     margin-top: 0px;
     position: relative;
   }
@@ -976,7 +976,7 @@ section {
   padding-left: 25px;
   border: none;
   font-size: 2rem;
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   text-align: center;
   z-index: 1;
   transition: all 0.3s ease 0s;
@@ -986,7 +986,7 @@ section {
 .tab .nav-tabs li a i {
   display: block;
   font-size: 23px;
-  color: var(--secondary-txt-color);
+  color: #0a84b5; color: var(--secondary-txt-color);
   float: left;
   margin-right: 10px;
   line-height: 22px;
@@ -1034,7 +1034,7 @@ section {
 .tab .tab-content h3 {
   /* margin-top: -1px;   */
   font-family: var(--font-family);
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   font-weight: 300;
   text-align: left;
 }
@@ -1055,7 +1055,7 @@ section {
 
 .tab .tab-content p {
   font-family: var(--font-family-sans-serif);
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   text-align: left;
   padding-right: 30px;
 }
@@ -1070,7 +1070,7 @@ section {
 
 .tab .things-i-do li::before {
   content: "\2714";
-  color: var(--secondary-txt-color);
+  color: #0a84b5; color: var(--secondary-txt-color);
   font-weight: 400;
   display: inline-block;
   width: 1em;
@@ -1081,7 +1081,7 @@ section {
 .tab .things-i-do li {
   font-family: var(--font-family-sans-serif);
   border: none;
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   margin-right: 0;
   text-align: left;
   transition: all 0.3s ease 0s;
@@ -1118,7 +1118,7 @@ section {
 
 #work {
   width: 100%;
-  background-color: var(--primary-background-color);
+  background-color: #ffffff; background-color: var(--primary-background-color);
 }
 
 .work-content {
@@ -1177,7 +1177,7 @@ section {
   height: 0%;
   top: 50%;
   width: 2px;
-  background-color: var(--primary-background-color);
+  background-color: #ffffff; background-color: var(--primary-background-color);
   left: 15px;
   z-index: 111;
   transition: 0.4s;
@@ -1193,7 +1193,7 @@ section {
   height: 0%;
   top: 50%;
   width: 2px;
-  background-color: var(--primary-background-color);
+  background-color: #ffffff; background-color: var(--primary-background-color);
   right: 15px;
   z-index: 111;
   transition: 0.4s;
@@ -1336,7 +1336,7 @@ section {
   height: 2px;
   top: 15px;
   width: 0%;
-  background-color: var(--primary-background-color);
+  background-color: #ffffff; background-color: var(--primary-background-color);
   left: 50%;
   z-index: 111;
   transition: 0.4s;
@@ -1923,7 +1923,7 @@ section {
 
 #contact {
   width: 100%;
-  background-color: var(--secondary-background-color);
+  background-color: #f6f6f6; background-color: var(--secondary-background-color);
   margin-top: 0px;
   position: relative;
 }
@@ -2038,7 +2038,7 @@ section {
   padding: 6px 12px;
   font-size: 1em;
   line-height: 1.42857143;
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   background-image: none;
   border: 1px solid black;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2093,7 +2093,7 @@ section {
 
 .contact-info p {
   font-size: 15px;
-  color: var(--primary-txt-color);
+  color: #00172b; color: var(--primary-txt-color);
   line-height: 1.8em;
   margin-bottom: 30px;
 }
@@ -2122,7 +2122,7 @@ section {
   position: relative;
   margin-left: 0px;
   margin-top: 0px;
-  background-color: var(--primary-txt-color);
+  background-color: #00172b; color: var(--primary-txt-color);
   height: 30px;
   width: 30px;
   text-align: center;
@@ -2337,7 +2337,7 @@ section {
   }
 
   .navbar-default .navbar-nav > li > a:hover {
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
   }
 
   #portfoliolist .portfolio {
@@ -2406,7 +2406,7 @@ section {
   }
 
   .navbar-default .navbar-nav > li > a:hover {
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
   }
 
   .hero {
@@ -2417,7 +2417,7 @@ section {
     padding: 0px;
     display: table;
     height: 100%;
-    background-color: var(--secondary-background-color);
+    background-color: #f6f6f6; background-color: var(--secondary-background-color);
   }
 
   .navbar-default .navbar-toggle {
@@ -2617,7 +2617,7 @@ section {
   }
 
   .navbar-default .navbar-nav > li > a:hover {
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
   }
 
   .active-grid {
@@ -2694,7 +2694,7 @@ section {
 
   .us-row {
     height: 450px;
-    background-color: var(--secondary-background-color);
+    background-color: #f6f6f6; background-color: var(--secondary-background-color);
   }
 
   #filters li {
@@ -2731,7 +2731,7 @@ section {
   }
 
   .navbar-default .navbar-nav > li > a:hover {
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
   }
 
   .tab .nav-tabs li a {
@@ -2762,7 +2762,7 @@ section {
   .tab .nav-tabs li a i {
     display: block;
     font-size: 23px;
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
     float: left;
     margin-right: 8px;
     line-height: 22px;
@@ -2813,7 +2813,7 @@ section {
   }
 
   .navbar-default .navbar-nav > li > a:hover {
-    color: var(--primary-txt-color);
+    color: #00172b; color: var(--primary-txt-color);
   }
 
   .about-details {
@@ -2833,7 +2833,7 @@ section {
   .home-contact1 {
     font-size: 12px;
     padding: 7px 12px;
-    background-color: var(--primary-txt-color);
+    background-color: #00172b; color: var(--primary-txt-color);
     color: white;
     border-radius: 6px;
     letter-spacing: 1px;
