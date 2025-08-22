@@ -1,0 +1,42 @@
+# Anthony Boyington Portfolio Website - robots.txt
+# https://anthonyboyington.com
+
+User-agent: *
+Allow: /
+
+# Disallow sensitive or unnecessary directories
+Disallow: /php/
+Disallow: *.log
+Disallow: /tmp/
+Disallow: /private/
+
+# Allow access to CSS, JS, and images for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Sitemap location
+Sitemap: https://anthonyboyington.com/sitemap.xml
+
+# Crawl-delay for polite crawling (optional)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block common bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
